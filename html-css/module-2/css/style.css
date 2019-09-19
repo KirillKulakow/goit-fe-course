@@ -10,6 +10,7 @@ html {
 
 .body {
 font-family: PlayfairDisplay;
+margin: 0;
 }
 
 .container {
@@ -19,12 +20,12 @@ font-family: PlayfairDisplay;
 }
 
 .page-nav {
-  padding-top: 75px;
-  padding-bottom: 100px;
+  margin-top: 75px;
+  margin-bottom: 100px;
 }
 
 .site-navigate {
-    font-size: 14px;
+    font-size: 0px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -33,11 +34,12 @@ font-family: PlayfairDisplay;
 
 .site-navigate li {
   display: inline-block;
-  padding-right: 110px;
+  margin-right: 110px;
+  font-size: 14px;
 }
 
 .site-navigate li:last-child {
-  padding-right: 0;
+  margin-bottom: 0;
 }
 
 .site-navigate a {
@@ -46,6 +48,7 @@ font-family: PlayfairDisplay;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 16px;
+  display: block;
 }
 
 .site-navigate a:hover,
@@ -71,41 +74,49 @@ margin-bottom: 60px;
   margin-right: 0px;
 }
 
-.Filter {
+.filter {
   color: #626262;
   font-size: 14px;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 .content-item h2 {
   color: #626262;
   font-size: 30px;
   width: 420px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-.About {
+.about {
   color: #626262;
   font-size: 14px;
   width: 420px;
   height: 70px;
   line-height: 24px;
   overflow: hidden;
+  margin: 0;
+  margin-top: 15px;
 }
 
-.Load-button {
+.load-button {
+  display: block;
+  margin: 0 auto;
   border-width: 0.5px;
   border-color: #626262;
   border-style: solid;
   padding: 23px 36px;
-  margin-left: 350px;
   background-color: transparent;
   color: #626262;
   font-size: 20px;
   cursor: pointer;
 }
 
-.Load-button:hover,
-.Load-button:focus {
+.load-button:hover,
+.load-button:focus {
   color: #27cfd1;
   border-color: #27cfd1;
 }
