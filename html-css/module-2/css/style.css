@@ -21,8 +21,8 @@ margin: 0;
 }
 
 .page-nav {
-  margin-top: 75px;
-  margin-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 100px;
 }
 
 .site-navigate {
@@ -40,7 +40,7 @@ margin: 0;
 }
 
 .site-navigate li:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .site-navigate a {
