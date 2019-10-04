@@ -52,7 +52,7 @@ font-family: Roboto;
   padding-right: 25px;
 }
 
-.site-navigate li:first-child {
+.site-navigate li:last-child {
   padding-right: 0px;
 }
 
