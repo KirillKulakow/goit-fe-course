@@ -11,10 +11,6 @@ html {
 
 .body {
 font-family: Roboto;
-margin: 0 auto;
-width: 1110px;
-margin: 35px auto;
-position: relative;
 }
 
 .clearfix::after {
@@ -23,9 +19,13 @@ position: relative;
   clear: both;
 }
 
+.page-header {
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
 .page-nav {
   text-transform: uppercase;
-  margin-bottom: 100px;
 }
 
 .logo a{
@@ -70,7 +70,14 @@ li:hover {
 }
 
 .logo { float: left; }
-.site-navigate li { float: right; }
+.site-navigate { float: right;}
+.site-navigate li { float: left; }
+
+.container {
+width: 1110px;
+margin: 35px auto;
+position: relative;
+}
 
 .product {
   text-transform: uppercase;
@@ -94,8 +101,9 @@ li:hover {
   left: 50%;
 }
 
-.folder_content_first {
-  margin-bottom: 30px;
+.folder_content {
+  padding-bottom: 60px;
+  padding: 0;
 }
 
 .content-item {
@@ -104,9 +112,10 @@ li:hover {
   width: 255px;
   height: auto;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.content-item:last-child {
+.content-item:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -165,45 +174,27 @@ li:hover {
   background-color: rgba(50,50,50,0.5);
 }
 
-.folder_content_second {
-  margin-bottom: 90px;
-}
-
 .item_news {
   float: left;
   width: 350px;
   margin-right: 30px;
 }
 
-.laptop {
-  background: url(../img/news/ipad.jpg)no-repeat center center;
-  background-size: 472px 313px;
-}
-
-.girls {
-  background: url(../img/news/girls.jpg)no-repeat center center;
-  background-size: 513px 267px;
-}
-
-.bus {
-  background: url(../img/news/bus.jpg)no-repeat center center;
-  background-size: 393px 335px;
+.item_news:last-child {
+  margin-right: 0;
 }
 
 .img_new {
-  background-position-y: 100%;
+  height: 260px;
   width: 350px;
-  height: 265px;
-}
-
-.item_news:last-child {
-  margin-right: 0px;
 }
 
 .news_title {
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .news_title::after {
@@ -220,6 +211,8 @@ li:hover {
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .news_btn {
@@ -228,4 +221,8 @@ li:hover {
   border-radius: 5px;
   background-color: #1abc9c;
   color: #fff;
+}
+
+.news_btn:hover {
+  cursor: pointer;
 }
