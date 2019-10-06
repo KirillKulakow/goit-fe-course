@@ -240,11 +240,12 @@ position: relative;
   margin: 0;
   padding: 17px 43px;
   border-radius: 5px;
-  background-color: #1abc9c;
+  background-color: #555252;
   color: #fff;
   text-decoration: none;
 }
 
 .news_btn:hover {
   cursor: pointer;
+  background-color: #1abc9c;
 }
