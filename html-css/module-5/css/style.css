@@ -13,6 +13,11 @@ html {
 font-family: Roboto;
 }
 
+.mp {
+  margin: 0;
+  padding: 0;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -53,11 +58,11 @@ font-family: Roboto;
   font-size: 14px;
   list-style-type: none;
   color: #0f0101;
-  padding-right: 25px;
+  margin-right: 25px;
 }
 
 .site-navigate li:last-child {
-  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .site-navigate a {
@@ -79,7 +84,6 @@ position: relative;
 height: 600px;
 width: 100%;
 margin: 0 auto;
-margin-bottom: 100px;
 }
 
 .btn {
@@ -148,9 +152,9 @@ margin-bottom: 100px;
 }
 
 .content {
-  padding: 0;
   margin: 0;
-  margin-bottom: 100px;
+  padding: 100px 0;
+  background-color: #e9f0fd;
 }
 
 .container {
@@ -182,8 +186,8 @@ position: relative;
 }
 
 .folder_content {
-  padding-bottom: 60px;
   padding: 0;
+  margin: 0;
 }
 
 .content-item {
@@ -241,6 +245,7 @@ position: relative;
 .overlay-content-block {
   position: absolute;
   display: inline-block;
+  background-color: transparent;
   height: 50px;
   width: 50px;
   border: 2px solid #fff;
@@ -307,6 +312,7 @@ position: relative;
 .img_bcg {
   height: 280px;
   width: 255px;
+  background-color: #fff;
 }
 
 .img {
