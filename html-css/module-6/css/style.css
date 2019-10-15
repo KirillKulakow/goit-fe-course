@@ -9,13 +9,13 @@ html {
   box-sizing: inherit;
 }
 
-.body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.mp {
+h2, p {
   margin: 0;
   padding: 0;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .page-header {
@@ -40,8 +40,7 @@ html {
 }
 
 .site-navigate {
-  padding-top: 7px;
-  width: 490px;
+  min-width: 490px;
   display: flex;
   justify-content: space-between;
 }
@@ -54,6 +53,7 @@ html {
 }
 
 .site-navigate a {
+  display: block;
   color: #95e1d3;
   text-transform: uppercase;
   text-decoration: none;
@@ -81,6 +81,11 @@ html {
   opacity: 1;
 }
 
+.container-services {
+  min-width: 1185px;
+  margin: 0 auto;
+}
+
 .title-container {
   display: flex;
   justify-content: center;
@@ -94,6 +99,7 @@ html {
   font-family: 'Kaushan Script', cursive;
   font-size: 24px;
   margin-bottom: 20px;
+  text-transform: none;
 }
 
 .title-name {
@@ -128,7 +134,7 @@ html {
   margin-bottom: 90px;
 }
 
-.container-service {
+.block-services {
   display: block;
   height: 80px;
   width: 385px;
@@ -142,9 +148,6 @@ html {
   text-align: start;
   width: 80%;
   text-transform: uppercase;
-}
-
-.content-title h2 {
   font-weight: 500;
   font-size: 14px;
 }
@@ -152,45 +155,43 @@ html {
 .content-about {
   display: block;
   padding-left: 75px;
-}
-
-.content-about p{
   font-weight: 500;
   font-size: 14px;
   color: #999999;
 }
 
-.content-logo {
-  display: inline-block;
-  height: 100%;
+.block-services::before {
+  display: block;
+  height: 75px;
   width: 75px;
+  content: '';
   background-size: auto;
   background-repeat: no-repeat;
   background-position-x: 50%;
   position: absolute;
 }
 
-.content-logo.alarm {
+.block-services.alarm::before {
   background-image: url(../img/icon/alarm.png);
 }
 
-.content-logo.line {
+.block-services.line::before {
   background-image: url(../img/icon/linegraph.png);
 }
 
-.content-logo.comp {
+.block-services.comp::before {
   background-image: url(../img/icon/computerok.png);
 }
 
-.content-logo.book {
+.block-services.book::before {
   background-image: url(../img/icon/book1.png);
 }
 
-.content-logo.home {
+.block-services.home::before {
   background-image: url(../img/icon/home.png);
 }
 
-.content-logo.img1 {
+.block-services.img1::before {
   background-image: url(../img/icon/image1.png);
 }
 
@@ -198,7 +199,7 @@ html {
   margin-bottom: 40px;
 }
 
-.team p {
+.title-team-info {
   margin: 0 125px;
   margin-bottom: 90px;
   text-align: center;
@@ -232,6 +233,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  list-style-type: none;
 }
 
 .content-photo.dix {
@@ -256,6 +258,11 @@ html {
   border-right: 1px solid #f9bd87;
   opacity: 0;
   transition: 0.2s linear;
+}
+
+.overlay_icon a {
+  height: auto;
+  width: auto;
 }
 
 .overlay_icon.fb {
@@ -284,9 +291,9 @@ html {
   opacity: 0.8;
 }
 
-.content-item.team:hover .overlay_icon{
+.content-item.team:hover .overlay-icons .overlay_icon{
   cursor: pointer;
-  opacity: 1;
+  opacity: 2;
 }
 
 .overlay_icon:hover {
@@ -297,14 +304,14 @@ html {
   text-align: center;
 }
 
-.content-info h2 {
+.content-info-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
-.content-info p {
+.content-info-special  {
   font-weight: 100;
   font-style: italic;
   font-size: 15px;
@@ -337,6 +344,7 @@ html {
 }
 
 .email-input {
+  height: 100%;
   width: 60%;
   padding-left: 5px;
   font-weight: 100;
@@ -346,14 +354,18 @@ html {
 }
 
 .email-subscribe {
+  display: block;
   height: 100%;
   width: 40%;
+  padding: 0;
   background-color: #95e1d3;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
+  align-items: center;
   text-transform: uppercase;
-  text-align: center;
   line-height: 40px;
+  border: none;
+  cursor: pointer;
 }
