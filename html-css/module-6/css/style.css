@@ -40,6 +40,8 @@ h2, p {
 }
 
 .site-navigate {
+  margin: 0;
+  padding: 0;
   min-width: 490px;
   display: flex;
   justify-content: space-between;
@@ -223,6 +225,7 @@ h2, p {
 }
 
 .content-photo.team {
+  position: absolute;
   transition: 0.2s;
 }
 
@@ -240,10 +243,6 @@ h2, p {
   background-image: url(../img/photo/dix.png);
 }
 
-.content-photo.campbell {
-  background-image: url(../img/photo/campbell.png);
-}
-
 .content-photo.fertic {
   background-image: url(../img/photo/fertic.png);
 }
@@ -258,6 +257,10 @@ h2, p {
   border-right: 1px solid #f9bd87;
   opacity: 0;
   transition: 0.2s linear;
+}
+
+.overlay_icon:last-child {
+  border-right: none;
 }
 
 .overlay_icon a {
@@ -281,19 +284,21 @@ h2, p {
   background-image: url(../img/icon/instagram.png)
 }
 
-.content-item.team:hover .content-photo.team{
+.content-photo.overlay_bcg:hover .content-photo.linear{
   position: absolute;
-  transform: translate(-10px, -10px)
-}
-
-.content-item.team:hover .content-photo.linear{
+  transform: translate(-10px, -10px);
   background-image: linear-gradient(to top, #fce38a, #f38181);
-  opacity: 0.8;
+  opacity: 1;
 }
 
-.content-item.team:hover .overlay-icons .overlay_icon{
+.content-photo.overlay_bcg:hover .content-photo.team{
+  opacity: 0.5;
+}
+
+.content-photo.overlay_bcg:hover .overlay-icons .overlay_icon{
   cursor: pointer;
-  opacity: 2;
+  opacity: 1;
+  z-index: 1;
 }
 
 .overlay_icon:hover {
