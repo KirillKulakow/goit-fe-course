@@ -81,24 +81,27 @@ h1, h2, h3 p {
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
-  margin-bottom: 20px;
   text-transform: uppercase;
   color: #000;
 }
 
 .title-name {
-  display: inline-block;
-  width: 100%;
+  margin: 0;
   text-align: center;
+  font-family: 'DroidSerif', sans-serif;
   font-size: 16px;
   text-transform: none;
   color: #777777;
 }
 
 .folder_content {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -109,18 +112,17 @@ h1, h2, h3 p {
   margin-bottom: 120px;
   padding: 0;
   padding-top: 120px;
-}
-
-.block-services {
-  display: block;
-  height: 110px;
-  width: 285px;
   position: relative;
 }
 
 .content-title {
   display: block;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 18px;
+  height: auto;
+  width: 285px;
+  position: relative;
   text-align: center;
   font-family: 'Montserrat';
   font-weight: 700;
@@ -129,54 +131,50 @@ h1, h2, h3 p {
 
 .content-about {
   display: block;
+  height: auto;
+  width: 285px;
+  position: relative;
+  margin: 0;
   padding: 0 5px;
   font-weight: 500;
   font-size: 14px;
   color: #999999;
 }
 
-.block-services::before {
+.block-services {
   display: block;
   height: 75px;
   width: 75px;
-  content: '';
+  padding: 10px;
   border-radius: 50%;
   border: 3px solid #fed136;
-  background-size: auto 60%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  object-fit: contain;
   position: absolute;
   left: 50%;
-  top: -120%;
+  top: -5%;
   transform: translate(-50%, 50%);
 }
 
-.block-services.basket::before {
-  background-image: url(../img/icon/icon-basket.png);
-}
-
-.block-services.laptop::before {
-  background-image: url(../img/icon/icon-laptop.png);
-}
-
-.block-services.locked::before {
-  background-image: url(../img/icon/icon-locked.png);
-}
-
-.footer {
-  height: 675px;
-  width: auto;
-  padding-top: 105px;
+.section-form {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  padding: 105px 0;
   background-image: url(../img/photo/map_image.png);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.footer h2 {
-  padding-bottom: 75px;
+.title-container-form {
+  margin-bottom: 75px;
 }
 
-.foot {
+.form-clr {
   color: #fff;
+}
+
+.form-p {
+  color: #777777;
 }
 
 .block-form {
@@ -221,6 +219,14 @@ h1, h2, h3 p {
   margin: 0 auto;
 }
 
+input:valid:not(:placeholder-shown) {
+	outline: 1px solid green;
+}
+
+input:invalid:not(:placeholder-shown) {
+	outline: 1px solid red;
+}
+
 .form-btn-send {
   display: block;
   width: 240px;
@@ -237,5 +243,3 @@ h1, h2, h3 p {
   color: #fff;
 }
 
-input:invalid {border-color: red; border: 1px solid;}
-input:valid {border-color: green; border: 1px solid;}
