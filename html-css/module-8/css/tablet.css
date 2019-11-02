@@ -1,0 +1,70 @@
+@media (min-width: 767px) {
+    .bcg_cont {
+        height: 700px;
+    }
+
+    .header {
+        margin-top: 3%;
+    }
+
+    .nav__container {
+        width: 87%;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 19%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .log__block {
+        padding: 0;
+    }
+
+    .log__block a {
+        padding: 1.5vh 2vh;
+    }
+
+    .main__title {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 5.2em;
+    }
+
+    .info__title {
+        font-size: 2.4em;
+    }
+
+    .btn_partner {
+        width: 27%;
+        padding: 1vh;
+    }
+
+    .block__partner {
+        width: 65%;
+    }
+
+    .partner {
+        width: 50%;
+    }
+    
+    .partner.one {
+        order: 1;
+    }
+    
+    .partner.two {
+        order: 2;
+    }
+    
+    .partner.three {
+        order: 3;
+    }
+    
+    .partner.four {
+        order: 4;
+    }
+
+    .btn_partner.other {
+        width: 30%;
+    }
+}

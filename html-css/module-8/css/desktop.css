@@ -1,0 +1,42 @@
+@media (min-width: 1220px) {
+    .header {
+        margin-top: 0.5%;
+    }
+
+    .nav__container {
+        width: 70%;
+        margin-bottom: 13%;
+    }
+
+    .main__title {
+        width: 40%;
+        padding-bottom: 0;
+    }
+
+    .info__title {
+        margin-bottom: 3%;
+    }
+
+    .btn_partner {
+        width: auto;
+        padding: 1vh 1.5vw;
+    }
+
+    .block__partner {
+        width: 65%;
+        margin-bottom: 5%;
+    }
+    
+    .partner {
+        width: 25%;
+    }
+
+    .info__partner {
+        width: 100%;
+    }
+
+    .btn_partner.other {
+        width: auto;
+        padding: 1vh 1.5vw;
+    }
+}
