@@ -1,11 +1,11 @@
 @media (min-width: 1220px) {
     .header {
-        margin-top: 0.5%;
+        margin-bottom: 7vh;
     }
 
     .nav__container {
         width: 70%;
-        margin-bottom: 13%;
+        padding-bottom: 27vh;
     }
 
     .main__title {
