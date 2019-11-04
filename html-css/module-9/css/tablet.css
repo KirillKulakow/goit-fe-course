@@ -1,0 +1,57 @@
+@media (min-width: 767px) {
+
+    .nav__container {
+        padding-top: 4vh;
+        padding-bottom: 15vh;
+    }
+
+    .log__block {
+        padding: 0;
+    }
+
+    .log__block a {
+        padding: 1.5vh 2vh;
+    }
+
+    .main__title {
+        font-size: 5.2em;
+    }
+
+    .info__title {
+        font-size: 2.4em;
+    }
+
+    .btn_partner {
+        padding: 1vh;
+    }
+
+    .head_block_partner {
+        margin-bottom: 5%;
+    }
+
+    .partner__container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block__partner {
+        padding: 0;
+    }
+
+    .partner.one {
+        order: 1;
+    }
+    
+    .partner.two {
+        order: 2;
+    }
+    
+    .partner.three {
+        order: 3;
+    }
+    
+    .partner.four {
+        order: 4;
+    }
+
+}
