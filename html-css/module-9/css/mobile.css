@@ -11,6 +11,11 @@ html {
     box-sizing: inherit;
   }
 
+.mp0 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0 auto;
     min-width: 320px;
@@ -19,7 +24,7 @@ body {
 }
 
 .header {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-bottom: 15vh;
     position: relative;
@@ -32,7 +37,7 @@ body {
 
 .nav__container {
     padding: 0;
-    margin-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 .container {
@@ -40,20 +45,22 @@ body {
 }
 
 .logo {
-    padding: 0;
-    margin: 0;
     font-size: 2em;
     font-weight: 700;
 }
 
 .logo a {
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     color: #fff;
 }
 
 .log__block {
     margin: 0;
-    padding: 6vh 0 24.5vh 0;
+    padding: 0;
+    padding-top: 5%;
+    padding-bottom: 20%;
 }
 
 .log__block li {
@@ -68,6 +75,7 @@ body {
     border: 0.4vh solid #fff;
     border-radius: 4vh;
     transition: 0.2s;
+    box-sizing: border-box;
 }
 
 .log__block a:hover {
@@ -101,6 +109,7 @@ body {
 
 .btn_partner {
     padding: 1.8vh;
+    margin-bottom: 25%;
     background-color: #ff4e50;
     border: 0.4vh solid transparent;
     border-radius: 4vh;

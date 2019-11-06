@@ -2,11 +2,12 @@
 
     .nav__container {
         padding-top: 4vh;
-        padding-bottom: 15vh;
+        padding-bottom: 15%;
     }
 
     .log__block {
         padding: 0;
+        margin: 0;
     }
 
     .log__block a {
