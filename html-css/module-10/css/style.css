@@ -390,7 +390,7 @@ h2, h1, p {
   background-color: rgba(149, 225, 211, 1);
 }
 
-.team__item-lay.overlay_bcg:hover .team__overlay-icons .overlay__icon_item{
+.team__item-lay.overlay_bcg:hover .overlay__icon_item{
   cursor: pointer;
   opacity: 1;
   z-index: 1;
