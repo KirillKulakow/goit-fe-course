@@ -25,8 +25,8 @@ h2, h1, p {
   margin-bottom: 135px;
   padding-top: 30px;
   height: 1000px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(/img/bcg_header.png) no-repeat;
-  background: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9)), url(/img/bcg_header.png) no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(../img/bcg_header.png) no-repeat;
+  background: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9)), url(../img/bcg_header.png) no-repeat;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -34,8 +34,8 @@ h2, h1, p {
 @media (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) {
   .page-header {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(/img/bcg_header@2x.png) no-repeat;
-    background: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9)), url(/img/bcg_header@2x.png) no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(../img/bcg_header@2x.png) no-repeat;
+    background: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9)), url(../img/bcg_header@2x.png) no-repeat;
   }
 }
 
@@ -170,16 +170,12 @@ h2, h1, p {
   border-color: #fce38a;
 }
 
-
-
-
-
 .services__container {
   min-width: 1185px;
   margin: 0 auto;
 }
 
-.title-container {
+.services__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +212,7 @@ h2, h1, p {
   background-color: #f38181;
 }
 
-.content {
+.services__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,7 +269,7 @@ h2, h1, p {
   fill: #95e1d3;
 }
 
-.main__team .title-name::after {
+.section__team .title-name::after {
   margin-bottom: 40px;
 }
 
@@ -321,7 +317,7 @@ h2, h1, p {
   transition: 0.2s;
 }
 
-.overlay__icons {
+.team__overlay-icons {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
