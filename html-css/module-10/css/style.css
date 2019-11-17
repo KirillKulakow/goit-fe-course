@@ -11,7 +11,7 @@ html {
           box-sizing: inherit;
 }
 
-h2, h1, p {
+h2, h1, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,6 @@ h2, h1, p {
 
 .page-header {
   margin: 0 auto;
-  margin-bottom: 135px;
   padding-top: 30px;
   height: 1000px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(../img/bcg_header.png);
@@ -170,8 +169,12 @@ h2, h1, p {
   border-color: #fce38a;
 }
 
-.services__container {
-  min-width: 1185px;
+.section__services {
+  padding-top: 135px;
+}
+
+.container {
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -213,6 +216,8 @@ h2, h1, p {
 }
 
 .services__content {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +226,6 @@ h2, h1, p {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 40px;
 }
 
 .services__content-item {
@@ -283,7 +287,7 @@ h2, h1, p {
 }
 
 .team__list {
-  padding: 0 40px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +427,7 @@ h2, h1, p {
   color: #999999;
 }
 
-.footer {
+.section__footer {
   height: 65px;
   border-top: 1px solid #e5e5e5;
   display: -webkit-box;
