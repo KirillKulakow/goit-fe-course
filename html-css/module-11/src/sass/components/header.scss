@@ -1,0 +1,50 @@
+.page-header {
+    margin: 0 auto;
+    margin-bottom: 135px;
+    padding-top: 30px;
+    height: 1000px;
+    background: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9)), url(../images/bcg_header.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+&__nav {
+    margin: 0 auto;
+    margin-bottom: 135px;
+    @include flex_sb_center;
+    text-align: center;
+}
+&__logo {
+    text-align: left;
+}
+&__logo--txt {
+    font-family: $secondary-font-stack;
+    font-weight: 700;
+    font-size: 30px;
+    color: $font-color-header;
+    text-decoration: none;
+}
+&__title {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    text-align: center;
+    }
+&__btn {
+    @include push--auto;
+    padding: 10px 20px;
+    font-family: $secondary-font-stack;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $font-color-header;
+    border: 2px solid $font-color-header;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+    }
+    
+&__btn:hover {
+    color: $font-color-header-hover;
+    border-color: $font-color-header-hover;
+    }
+    
+  }

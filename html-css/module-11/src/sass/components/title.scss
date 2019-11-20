@@ -1,0 +1,38 @@
+.title__kaus_script {
+    font-family: $third-font-stack;
+    font-size: 72px;
+    color: $font-color-header;
+  }
+  
+  .title__monts {
+    font-family: $secondary-font-stack;
+    font-weight: bold;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: $font-color-header;
+  }
+  
+  .title--ks-unique {
+    display: block;
+    color: $font-color-main;
+    text-align: center;
+    font-size: 24px;
+    text-transform: none;
+  }
+  
+  .title--ms-unique {
+    display: block;
+    color: $font-color-main;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .title-name::after {
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 60px;
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: $color-line;
+  }

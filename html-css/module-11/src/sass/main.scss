@@ -1,0 +1,18 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variables';
+@import 'helpers/mixin';
+@import 'normalize';
+@import 'fonts';
+@import 'base';
+@import 'grid';
+
+@import 'components/header';
+@import 'components/navigate';
+@import 'components/title';
+@import 'components/services';
+@import 'components/team';
+@import 'components/ovelray-icons.scss';
+@import 'components/footer';
+@import 'components/email';

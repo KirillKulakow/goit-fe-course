@@ -1,0 +1,58 @@
+.services__container {
+    min-width: 1185px;
+    margin: 0 auto;
+  }
+  
+  .services__title {
+      margin-bottom: 60px;
+    @include flex_center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services__content {
+    padding: 0 40px;
+    @include flex_sb_center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .services__content-item {
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 90px;
+    @include flex_sb_center;
+  }
+  
+  .services__content-block {
+    display: block;
+    height: 80px;
+    width: 280px;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .content-block__title {
+    display: block;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .content-block__about {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: $font-color-content;
+  }
+  
+  .services__img {
+    width: 41px;
+    height: 41px;
+    display: inline-block;
+    fill: $icon-services-color;
+  }
+  
+  .section__team .title-name::after {
+    margin-bottom: 40px;
+  }

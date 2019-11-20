@@ -1,0 +1,25 @@
+.footer {
+    @include flex_sb_center;
+    height: 65px;
+    border-top: 1px solid $footer-line-color;
+&__designed {
+    font-family: $secondary-font-stack;
+    font-size: 14px;
+    }
+&__designed-color {
+    color: $footer-font-unique-color;
+    }
+&__block-email {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    width: 380px;
+    border: 1px solid $footer-line-color;
+    }
+  }
+  
+  
+  
+  
+  
+  

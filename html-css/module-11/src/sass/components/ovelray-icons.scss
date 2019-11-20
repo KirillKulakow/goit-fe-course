@@ -1,0 +1,48 @@
+.overlay__icon_item {
+    height: 55px;
+    width: 55px;
+    position: relative;
+    background-color: $icon-bcg;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 0px;
+    text-align: center;
+    border-right: 1px solid $color-line;
+    list-style-type: none;
+    opacity: 0;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  
+  .overlay__icon_item:last-child {
+    border-right: none;
+  }
+  
+  .overlay__icon_link {
+    height: 54px;
+    width: 54px;
+  }
+  
+  .overlay_icon__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    fill: $icon-color;
+  }
+  
+  
+  
+  .overlay__icon_item:hover {
+    background-color: $icon-bcg-hover;
+    fill: $icon-color-hover;
+  }
+  
+  .overlay__icon_item:hover .overlay_icon__svg {
+    fill: $icon-color-hover;
+  }
