@@ -1,8 +1,9 @@
 
 .site-navigate {
     @include mp--zero;
+    float: right;
     padding-top: 13px;
-    min-width: 490px;
+    width: 550px;
     @include flex_sb_center;
     &__item {
         font-family: $secondary-font-stack;

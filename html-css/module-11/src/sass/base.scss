@@ -19,3 +19,13 @@ h2, h1, p {
 .body {
   font-family: $main-font-stack;
 }
+
+.txt-center {
+  text-align: center;
+}
+
+.container {
+  min-width: 1185px;
+  margin: 0 auto;
+}
+

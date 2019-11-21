@@ -29,14 +29,12 @@ img {
     min-height: 1px; 
     }   
  
-@media (min-width:#{$breakpoint-medium}) {
-    .wrapper {      
-        width: 100%;
-        max-width: $grid-max-width;     
-        }
-    @for $i from 1 through $grid-columns {      
-        .column-#{$i} {         
-            width: 100% / $grid-columns * $i;   
-            }           
-        }   
+.wrapper {      
+    width: 100%;
+    max-width: $grid-max-width;     
     }
+@for $i from 1 through $grid-columns {      
+    .column-#{$i} {         
+        width: 100% / $grid-columns * $i;   
+        }           
+    } 
